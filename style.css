@@ -93,3 +93,8 @@ button {
   display: inline-block;
   transform: rotate(-45deg);
 }
+
+.delete-btn {
+  color: red;
+  background: none;
+}
