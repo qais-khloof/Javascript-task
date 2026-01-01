@@ -57,6 +57,11 @@ button {
   background: #055a6d;
 }
 
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+
 .todo-item {
   display: flex;
   justify-content: space-between;
