@@ -149,3 +149,10 @@ button {
   background: #0d8fa8;
   color: white;
 }
+#todoList {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
