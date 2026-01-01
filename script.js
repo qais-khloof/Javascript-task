@@ -56,5 +56,9 @@ function drawTasks() {
     deleteBtn.innerText = "🗑";
     deleteBtn.className = "delete-btn";
     deleteBtn.setAttribute("data-index", i);
+
+    actions.appendChild(check);
+    actions.appendChild(editBtn);
+    actions.appendChild(deleteBtn);
   }
 }
