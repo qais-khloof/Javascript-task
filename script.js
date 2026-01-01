@@ -33,5 +33,12 @@ function drawTasks() {
   for (var i = 0; i < todos.length; i++) {
     if (currentFilter === "done" && !todos[i].done) continue;
     if (currentFilter === "todo" && todos[i].done) continue;
+
+    var li = document.createElement("li");
+    li.className = "todo-item";
+    if (todos[i].done) li.className += " done";
+    var textSpan = document.createElement("span");
+    textSpan.innerText = todos[i].text;
+    var actions = document.createElement("div");
   }
 }
