@@ -83,3 +83,14 @@ todoList.onclick = function (e) {
     return;
   }
 };
+
+todoList.onchange = function (e) {
+  var t = e.target;
+
+  if (t.classList.contains("check")) {
+    var idx = Number(t.getAttribute("data-index"));
+    todos[idx].done = t.checked;
+    drawTasks();
+  }
+};
+
