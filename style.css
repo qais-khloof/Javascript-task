@@ -85,3 +85,87 @@ button {
   background: none;
   font-size: 18px;
 }
+
+.edit-btn {
+  color: #f9a825;
+  font-size: 18px;
+  background: none;
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
+.delete-btn {
+  color: red;
+  background: none;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.danger {
+  flex: 1;
+  background: #ff0000;
+  color: white;
+  transition: 0.3s;
+}
+
+.danger:hover {
+  background: #ed6d6d;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  width: 300px;
+  margin: 15% auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.gray {
+  background: #ccc;
+}
+.red {
+  background: #e53935;
+  color: white;
+}
+.blue {
+  background: #0d8fa8;
+  color: white;
+}
+#todoList {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+#todoList::-webkit-scrollbar {
+  width: 3px;
+}
+
+#todoList::-webkit-scrollbar-thumb {
+  background-color: #0d8fa8;
+  border-radius: 10px;
+}
+
+#todoList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
