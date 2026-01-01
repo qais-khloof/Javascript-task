@@ -56,3 +56,27 @@ button {
 .filters .active {
   background: #055a6d;
 }
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1px;
+  margin-bottom: 8px;
+}
+
+.todo-item.done span {
+  color: #d32f2f;
+  text-decoration: line-through;
+  text-decoration-color: #d32f2f;
+}
+
+.todo-item.deleting {
+  background: #ffd6d6;
+}
+
+.todo-actions button {
+  background: none;
+  font-size: 18px;
+}
