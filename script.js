@@ -40,5 +40,11 @@ function drawTasks() {
     var textSpan = document.createElement("span");
     textSpan.innerText = todos[i].text;
     var actions = document.createElement("div");
+
+    var check = document.createElement("input");
+    check.type = "checkbox";
+    check.checked = todos[i].done;
+    check.className = "check";
+    check.setAttribute("data-index", i);
   }
 }
