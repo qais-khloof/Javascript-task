@@ -46,5 +46,10 @@ function drawTasks() {
     check.checked = todos[i].done;
     check.className = "check";
     check.setAttribute("data-index", i);
+
+    var editBtn = document.createElement("button");
+    editBtn.innerText = "✏";
+    editBtn.className = "edit-btn";
+    editBtn.setAttribute("data-index", i);
   }
 }
