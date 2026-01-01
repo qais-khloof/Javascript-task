@@ -40,3 +40,19 @@ button {
   background: #0d8fa8;
   color: white;
 }
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.filters button {
+  flex: 1;
+  background: #0d8fa8;
+  color: white;
+}
+
+.filters .active {
+  background: #055a6d;
+}
