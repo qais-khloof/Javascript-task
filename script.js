@@ -26,3 +26,12 @@ addBtn.onclick = function () {
   input.value = "";
   drawTasks();
 };
+
+function drawTasks() {
+  todoList.innerHTML = "";
+
+  for (var i = 0; i < todos.length; i++) {
+    if (currentFilter === "done" && !todos[i].done) continue;
+    if (currentFilter === "todo" && todos[i].done) continue;
+  }
+}
