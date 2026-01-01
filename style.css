@@ -137,3 +137,15 @@ button {
   gap: 10px;
   margin-top: 15px;
 }
+
+.gray {
+  background: #ccc;
+}
+.red {
+  background: #e53935;
+  color: white;
+}
+.blue {
+  background: #0d8fa8;
+  color: white;
+}
