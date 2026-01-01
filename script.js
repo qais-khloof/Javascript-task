@@ -51,5 +51,10 @@ function drawTasks() {
     editBtn.innerText = "✏";
     editBtn.className = "edit-btn";
     editBtn.setAttribute("data-index", i);
+
+    var deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "🗑";
+    deleteBtn.className = "delete-btn";
+    deleteBtn.setAttribute("data-index", i);
   }
 }
