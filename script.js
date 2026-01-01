@@ -114,3 +114,7 @@ confirmDeleteBtn.onclick = function () {
   drawTasks();
 };
 
+function closeDeleteModal() {
+  deleteModal.style.display = "none";
+}
+
