@@ -35,3 +35,8 @@ button {
   border: none;
   cursor: pointer;
 }
+
+#addBtn {
+  background: #0d8fa8;
+  color: white;
+}
