@@ -130,3 +130,12 @@ saveEditBtn.onclick = function () {
 function closeEditModal() {
   editModal.style.display = "none";
 }
+
+deleteDoneBtn.onclick = function () {
+  var newTodos = [];
+  for (var i = 0; i < todos.length; i++) {
+    if (!todos[i].done) newTodos.push(todos[i]);
+  }
+  todos = newTodos;
+  drawTasks();
+};
