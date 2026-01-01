@@ -106,3 +106,11 @@ for (var i = 0; i < filters.length; i++) {
   };
 }
 
+confirmDeleteBtn.onclick = function () {
+  if (deleteIndex > -1) {
+    todos.splice(deleteIndex, 1);
+  }
+  closeDeleteModal();
+  drawTasks();
+};
+
