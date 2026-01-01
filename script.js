@@ -60,5 +60,9 @@ function drawTasks() {
     actions.appendChild(check);
     actions.appendChild(editBtn);
     actions.appendChild(deleteBtn);
+
+    li.appendChild(textSpan);
+    li.appendChild(actions);
+    todoList.appendChild(li);
   }
 }
